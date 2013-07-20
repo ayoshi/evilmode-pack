@@ -12,3 +12,11 @@
 
 ;; evil-nerd-commenter
 (live-load-config-file "evil-nerd-commenter-conf.el")
+
+;; general bindings
+(live-load-config-file "bindings-conf.el")
+
+;; Mode specific configs:
+
+;; ace-jump
+(live-load-config-file "evil-ace-jump-conf.el")
