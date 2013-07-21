@@ -11,9 +11,9 @@
 
 ; Leader lb - ido buffers lf - ido files
 (evil-leader/set-key "lb" 'ido-switch-buffer)
-(evil-leader/set-key "lB" 'ido-switch-file-buffer)
+(evil-leader/set-key "lB" 'ibuffer)
 (evil-leader/set-key "lf" 'ido-find-file)
-(evil-leader/set-key "lr" 'recentf-ido-find-file)
+(evil-leader/set-key "lr" 'ido-recentf-open)
 
 ;; simulate vim's "nnoremap <space> 10jzz"
 (define-key evil-normal-state-map " " (lambda ()
