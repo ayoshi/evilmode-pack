@@ -22,7 +22,7 @@
                                         (evil-scroll-line-down 10)
                                         ))
 
-; simulate vim's "nnoremap <backspace> 10kzz"
+;; simulate vim's "nnoremap <backspace> 10kzz"
 (define-key evil-normal-state-map [backspace] (lambda ()
                      (interactive)
                      (previous-line 10)
@@ -32,3 +32,12 @@
 ;; Working with splits
 (evil-leader/set-key "|" 'split-window-horizontally )
 (evil-leader/set-key "\\" 'split-window-vertically)
+
+;; Use Shift-arrows to move around splits
+(windmove-default-keybindings)
+
+;; Magit status screen
+(evil-leader/set-key "gs" 'magit-status)
+
+;;Undo tree
+(evil-leader/set-key "u" 'undo-tree-visualize)
