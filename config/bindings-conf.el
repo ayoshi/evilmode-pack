@@ -41,3 +41,7 @@
 
 ;;Undo tree
 (evil-leader/set-key "u" 'undo-tree-visualize)
+
+;; Super escape using chords
+(key-chord-define-global "jk"  'evil-normal-state) ; super ESC
+(key-chord-define-global "JK"  'evil-emacs-state)
