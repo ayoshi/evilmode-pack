@@ -45,3 +45,6 @@
 ;; Super escape using chords
 (key-chord-define-global "jk"  'evil-normal-state) ; super ESC
 (key-chord-define-global "JK"  'evil-emacs-state)
+
+;; Expand region
+(global-set-key (kbd "C-=") 'er/expand-region)
