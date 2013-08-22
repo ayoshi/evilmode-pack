@@ -22,6 +22,9 @@
                                         (evil-scroll-line-down 10)
                                         ))
 
+;; Use = to indent region - very useful
+(define-key evil-normal-state-map "=" 'indent-region)
+
 ;; simulate vim's "nnoremap <backspace> 10kzz"
 (define-key evil-normal-state-map [backspace] (lambda ()
                      (interactive)
