@@ -50,4 +50,7 @@
 (key-chord-define-global "JK"  'evil-emacs-state)
 
 ;; Expand region
-(global-set-key (kbd "C-=") 'er/expand-region)
+(define-key evil-normal-state-map (kbd "C-=") 'er/expand-region)
+
+;; Use DASH for documentaton
+(define-key evil-normal-state-map (kbd "?") 'dash-at-point)
